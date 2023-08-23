@@ -16,28 +16,37 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/introduction' }
+      { text: 'Guide', link: '/introduction', activeMatch: '/docs/' }
     ],
 
     sidebar: [
       {
         items: [
-          { text: 'Introduction', link: '/introduction' },
+          { text: 'Introduction', link: '/docs/introduction' },
         ]
       },
       {
         text: 'Introduction',
         items: [
-          { text: 'What is Nuxt?', link: '/intro/nuxt' },
-          { text: "What's TailwindCSS?", link: '/intro/tailwindcss' },
-          { text: "What is a Codespace?", link: '/intro/codespace' },
+          { text: 'What is Nuxt?', link: '/docs/intro/nuxt' },
+          { text: "What's TailwindCSS?", link: '/docs/intro/tailwindcss' },
+          { text: "What is a Codespace?", link: '/docs/intro/codespace' },
         ]
       },
       {
         text: 'Prepare environment',
         items: [
-          { text: 'Instructions', link: '/env/instructions' },
-          { text: 'Set up codespace', link: '/env/setup' },
+          { text: 'Instructions', link: '/docs/env/instructions' },
+          { text: 'Set up codespace', link: '/docs/env/setup' },
+          { text: 'VS Code Interface', link: '/docs/env/interface' },
+          { text: 'Setting up Nuxt', link: '/docs/env/nuxt' },
+          { text: 'Setting up Tailwind', link: '/docs/env/tailwind' },
+        ]
+      },
+      {
+        text: 'Making your website',
+        items: [
+          { text: 'Set up a page', link: '/docs/web/pages' },
         ]
       },
     ],
