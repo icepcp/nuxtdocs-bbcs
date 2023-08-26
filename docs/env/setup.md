@@ -9,5 +9,6 @@ Make sure to tick the checkbox that says "Add a README file", if not, you won't 
 Head to your repo and click on the "Code" button, then click on "New Codespace"
 
 ![env-setup02](/env-setup02.png)
-##
+
+---
 Congrats! You've successfully created your codespace! Now, let's learn more a bit about the interface of Visual Code

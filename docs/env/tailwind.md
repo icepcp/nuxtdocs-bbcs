@@ -6,3 +6,6 @@
 Give it a while to install. Once it's done, a notification will pop out from the bottom right saying that TailwindCSS installed successfully along with two file created notifications. It is safe to close them all
 
 If you do not see the option for `Nuxtr: Configure CSS Frameworks`, refresh the page. If you still don't see the option, make sure that you have [installed the Nuxtr extension.](/docs/env/nuxt.html#install-extensions)
+
+---
+Once you've set up TailwindCSS, move to the next section and make your very first page.

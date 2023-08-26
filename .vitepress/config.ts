@@ -16,7 +16,7 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/introduction', activeMatch: '/docs/' }
+      { text: 'Guide', link: '/docs/introduction', activeMatch: '/docs/' }
     ],
 
     sidebar: [
@@ -47,6 +47,23 @@ export default defineConfig({
         text: 'Making your website',
         items: [
           { text: 'Set up a page', link: '/docs/web/pages' },
+          { text: 'TailwindUI', link: '/docs/web/home' },
+          { text: 'Making components', link: '/docs/web/components' },
+          { text: 'Adding another page', link: '/docs/web/another-page' },
+          { text: 'Changing const', link: '/docs/web/change-const' },
+          { text: 'Change to SPA', link: '/docs/web/spa' },
+          { text: 'Edit your website', link: '/docs/web/edit' },
+        ]
+      },
+      {
+        text: 'Hosting',
+        items: [
+        ]
+      },
+      {
+        text: 'Cleaning up',
+        items: [
+          { text: 'code formatter', link: '/docs/web/edit' },
         ]
       },
     ],
