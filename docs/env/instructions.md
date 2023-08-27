@@ -1,5 +1,4 @@
 # Instructions
-This is what we'll be covering in this section.
 ## Log in to GitHub
 After logging in, create a new repo and add a README file
 :::info

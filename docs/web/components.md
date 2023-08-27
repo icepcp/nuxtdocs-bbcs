@@ -16,7 +16,7 @@ Make sure that before you run the command, `npm run dev` isn't running. If it's 
 
 2. Right click on the `components` folder and select `Create Vue Component`. Name it `navbar`. Expand the `components` folder and open `navbar.vue`
 
-3. Now, we'll have to copy the `<header>` component into our `navbar.vue`. In `index.vue`, hover right beside line 3 on the left side. You'll see an arrow like 'V'. Click on it to collapse on the `<header>` component. Copy the entire component
+3. Now, we'll have to copy the `<header>` component into our `navbar.vue`. In `index.vue`, scroll all the way up and hover right beside line 3 on the left side. You'll see an arrow like 'V'. Click on it to collapse on the `<header>` component. Cut the entire component
 
 4. Go into `navbar.vue` and paste your component in between `<div>`
 ```vue
@@ -41,6 +41,25 @@ Make sure that before you run the command, `npm run dev` isn't running. If it's 
 <Navbar />
 ```
 in between where the `<header>` used to be.
+
+6. You will realise that there are errors in our `navbar.vue`. We need to add the const for our `navbar.vue`, so go to `index.vue` and scroll down until you see `<script setup>`. Cut everything from there excluding the `<script setup>` tags and paste it into `navbar.vue`'s `<script lang="ts" setup>`
+```vue
+<template>
+  <div>
+    <!-- your component -->
+  </div>
+</template>
+
+<script lang="ts" setup>
+/* the script you copied goes here */
+</script>
+
+
+
+<style>
+
+</style>
+```
 
 ---
 To check if you've done it correctly, run 

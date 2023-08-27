@@ -7,6 +7,8 @@ Run this command in the terminal, if prompted to install packages, type y and hi
 ~~~bash
 npx nuxi@latest init my-app
 ~~~
+* If prompted to install packages, type y and hit enter
+* If prompted to choose package manager, choose `npm`
 ::: info
 You might have this pop up when you are copying and pasting into the terminal, click on allow
 ![env-nuxt02](/env-nuxt02.png)
@@ -22,14 +24,10 @@ After you’re done, you can safely delete the my-app folder
 
 **Watch a short tutorial** [here](/env-nuxt03.mp4)
 ## Install dependencies
-Run these commands in the terminal **one by one**
-~~~bash
-npm install
-~~~
+Run this command in the terminal to install the needed dependencies
 ~~~bash
 npm install @headlessui/vue @heroicons/vue
 ~~~
-and give it a while for everything to install
 ## Install extensions
 Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 ~~~

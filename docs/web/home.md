@@ -10,7 +10,7 @@ On the right side of the screen, right beside the copy icon, change the HTML opt
 
 ![web-home01](/web-home01.png)
 
-Now go into your index.vue, and `Ctrl+A`/Select everything and replace it with the code you just copied. To see your app up and running, run this command in the terminal
+Now go into your `index.vue`, and `Ctrl+A`/Select everything and replace it with the code you just copied. To see your app up and running, run this command in the terminal
 ```bash
 npm run dev
 ```

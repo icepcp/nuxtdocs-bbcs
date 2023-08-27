@@ -5,7 +5,7 @@ Before we do that, let's talk more about the use of const. If you take a look at
 ## Instructions
 1. Head over to your `navbar.vue` component located in the components folder. 
 2. Scroll all the way down until you see `const navigation`. We will only be using the `Company` part at the end, so you can either choose to keep our current const, or remove them.
-3. Change the `{ name: 'Company', href: '#' },`'s href to /company. It should look like this
+3. Change the `{ name: 'Company', href: '#' },`'s href to `/company`. It should look like this
 ```ts
 { name: 'Company', href: '/company' },
 ```

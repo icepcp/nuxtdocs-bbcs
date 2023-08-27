@@ -9,7 +9,7 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    siteTitle: 'NuxtDocs BBCS',
+    siteTitle: 'BBCS NuxtDocs',
     editLink: {
       pattern: 'https://github.com/icepcp/nuxtdocs-bbcs/edit/main/:path',
       text: 'Edit this page on GitHub'
@@ -58,17 +58,38 @@ export default defineConfig({
       {
         text: 'Hosting',
         items: [
-        ]
-      },
-      {
-        text: 'Cleaning up',
-        items: [
-          { text: 'code formatter', link: '/docs/web/edit' },
+          { text: 'Format code', link: '/docs/host/format' },
+          { text: 'Commit and Sync', link: '/docs/host/commit' },
+          { text: 'Deploy on Netlify', link: '/docs/host/deploy' },
         ]
       },
     ],
     search: {
       provider: 'local'
     }
-  }
+  },
+  head: [
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-451F89P598' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-451F89P598');`,
+    ],
+    [
+      'script',
+      {},
+      `(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ilocny1ldg");`,
+    ]
+  ]
 })
